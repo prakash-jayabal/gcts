@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import {
   BottomNavigation,
   BottomNavigationAction,
@@ -20,6 +20,7 @@ import { MOBILE_NAV_ITEMS } from '@/constants';
 
 const MobileBottomNav: React.FC = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -40,9 +41,17 @@ const MobileBottomNav: React.FC = () => {
     }
   };
 
-  const getCurrentIndex = () => {
-    const currentIndex = MOBILE_NAV_ITEMS.findIndex(item => item.href === pathname);
-    return currentIndex >= 0 ? currentIndex : 0;
+  // Derive current index from pathname instead of using state
+  const currentIndex = React.useMemo(() => {
+    const index = MOBILE_NAV_ITEMS.findIndex(item => item.href === pathname);
+    return index >= 0 ? index : 0;
+  }, [pathname]);
+
+  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    const selectedItem = MOBILE_NAV_ITEMS[newValue];
+    if (selectedItem) {
+      router.push(selectedItem.href);
+    }
   };
 
   if (!isMobile) {
@@ -63,7 +72,8 @@ const MobileBottomNav: React.FC = () => {
       }}
     >
       <BottomNavigation
-        value={getCurrentIndex()}
+        value={currentIndex}
+        onChange={handleChange}
         sx={{
           backgroundColor: 'transparent',
           '& .MuiBottomNavigationAction-root': {
@@ -75,13 +85,12 @@ const MobileBottomNav: React.FC = () => {
           },
         }}
       >
-        {MOBILE_NAV_ITEMS.map((item) => (
+        {MOBILE_NAV_ITEMS.map((item, index) => (
           <BottomNavigationAction
             key={item.href}
             label={item.label}
             icon={getIcon(item.icon)}
-            href={item.href}
-            component="a"
+            value={index}
             sx={{
               transition: 'all 0.3s ease',
               textDecoration: 'none',
