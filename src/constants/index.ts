@@ -10,6 +10,7 @@ export const NAVIGATION_ITEMS = [
   { label: 'Volunteer', href: '/volunteer' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'News', href: '/news' },
+  { label: 'Sponsorship', href: '/sponsorship' },
   { label: 'Donate', href: '/donate' },
   { label: 'Contact', href: '/contact' },
   { label: 'Login', href: '/login' },

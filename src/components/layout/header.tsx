@@ -153,6 +153,7 @@ const Header: React.FC = () => {
   return (
     <>
       <AppBar 
+        suppressHydrationWarning 
         position="sticky" 
         elevation={0}
         sx={{
