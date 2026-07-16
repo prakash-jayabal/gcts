@@ -44,9 +44,49 @@ const Header: React.FC = () => {
   const drawer = (
     <Box sx={{ width: 280, height: '100%' }}>
       <Box sx={{ p: 2, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Typography variant="h6" component="div">
-          Cincinnati Tamil Sangam
-        </Typography>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+          <Box
+            component="img"
+            src="/images/gcts-logo.png"
+            alt="Greater Cincinnati Tamil Sangam"
+            onError={(e) => {
+              // Fallback to text if image fails to load
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              const fallback = target.nextElementSibling as HTMLElement;
+              if (fallback) fallback.style.display = 'flex';
+            }}
+            sx={{
+              width: '40px !important',
+              height: '40px !important',
+              borderRadius: '50% !important',
+              objectFit: 'cover !important',
+              minWidth: '40px !important',
+              minHeight: '40px !important',
+            }}
+          />
+          <Box
+            sx={{
+              width: '40px !important',
+              height: '40px !important',
+              borderRadius: '50% !important',
+              backgroundColor: 'primary.main !important',
+              display: 'none !important', // Hidden by default, shown on image error
+              alignItems: 'center !important',
+              justifyContent: 'center !important',
+              color: 'primary.contrastText !important',
+              fontSize: '1.1rem !important',
+              fontWeight: '600 !important',
+              minWidth: '40px !important',
+              minHeight: '40px !important',
+            }}
+          >
+            GCTS
+          </Box>
+          <Typography variant="h6" component="div">
+            Cincinnati Tamil Sangam
+          </Typography>
+        </Box>
         <IconButton onClick={handleDrawerToggle}>
           <Close />
         </IconButton>
@@ -138,20 +178,42 @@ const Header: React.FC = () => {
               }}
             >
               <Box
+                component="img"
+                src="/images/gcts-logo.png"
+                alt="Greater Cincinnati Tamil Sangam"
+                onError={(e) => {
+                  // Fallback to text if image fails to load
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const fallback = target.nextElementSibling as HTMLElement;
+                  if (fallback) fallback.style.display = 'flex';
+                }}
                 sx={{
-                  width: 40,
-                  height: 40,
-                  borderRadius: '50%',
-                  backgroundColor: 'primary.main',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: 'primary.contrastText',
-                  fontSize: '1.2rem',
-                  fontWeight: 600,
+                  width: '50px !important',
+                  height: '50px !important',
+                  borderRadius: '50% !important',
+                  objectFit: 'cover !important',
+                  minWidth: '50px !important',
+                  minHeight: '50px !important',
+                }}
+              />
+              <Box
+                sx={{
+                  width: '50px !important',
+                  height: '50px !important',
+                  borderRadius: '50% !important',
+                  backgroundColor: 'primary.main !important',
+                  display: 'none !important', // Hidden by default, shown on image error
+                  alignItems: 'center !important',
+                  justifyContent: 'center !important',
+                  color: 'primary.contrastText !important',
+                  fontSize: '1.4rem !important',
+                  fontWeight: '600 !important',
+                  minWidth: '50px !important',
+                  minHeight: '50px !important',
                 }}
               >
-                CTS
+                GCTS
               </Box>
               Cincinnati Tamil Sangam
             </Typography>

@@ -51,7 +51,7 @@ export default function DigitalMembershipCardPage() {
   };
 
   const generateCardNumber = () => {
-    return `CTS-${profile.id}-${profile.membershipType.toUpperCase()}`;
+    return `GCTS-${profile.id}-${profile.membershipType.toUpperCase()}`;
   };
 
   const formatExpiryDate = () => {
@@ -88,7 +88,7 @@ export default function DigitalMembershipCardPage() {
     <AppLayout>
       <PageHeader
         title="Digital Membership Card"
-        subtitle="Your CTS Membership Card"
+        subtitle="Your GCTS Membership Card"
         actions={[
           {
             label: 'Share Card',
@@ -229,7 +229,7 @@ export default function DigitalMembershipCardPage() {
                       pointerEvents: 'none',
                     }}
                   >
-                    CTS
+                    GCTS
                   </Box>
                 </CardContent>
               </Card>
@@ -276,7 +276,7 @@ export default function DigitalMembershipCardPage() {
                       Event Access
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      Show your card for free or discounted entry to CTS events
+                      Show your card for free or discounted entry to GCTS events
                     </Typography>
                   </CardContent>
                 </Card>

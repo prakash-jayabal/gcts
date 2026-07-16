@@ -12,6 +12,15 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Cincinnati Tamil Sangam",
   description: "Celebrating Tamil culture and heritage in Cincinnati",
+  icons: {
+    icon: [
+      { url: '/favicon.ico?v=3', sizes: 'any' },
+    ],
+    shortcut: '/favicon.ico?v=3',
+    apple: [
+      { url: '/favicon.ico?v=3', sizes: '180x180' },
+    ],
+  },
 };
 
 export default function RootLayout({

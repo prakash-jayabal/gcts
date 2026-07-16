@@ -205,7 +205,7 @@ export default function MembershipStatusPage() {
           <Container maxWidth="lg">
             <SectionTitle
               title="Membership History"
-              subtitle="Your Journey with CTS"
+              subtitle="Your Journey with GCTS"
               align="center"
               showDivider={true}
             />

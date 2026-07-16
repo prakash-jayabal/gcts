@@ -76,7 +76,7 @@ export default function NewsPage() {
     {
       id: '4',
       title: 'Community Service Initiative Launch',
-      excerpt: 'CTS launches new community service program to give back to the broader Cincinnati community through volunteer activities.',
+      excerpt: 'GCTS launches new community service program to give back to the broader Cincinnati community through volunteer activities.',
       content: 'In line with our commitment to being good neighbors and contributing positively to our adopted home, Cincinnati Tamil Sangam is launching a new community service initiative. This program will organize regular volunteer activities, food drives, and cultural exchange programs with other community organizations. Our goal is to share our rich culture while making meaningful contributions to the broader Cincinnati community through service and collaboration.',
       author: 'Rajesh Menon',
       authorRole: 'Community Outreach Coordinator',

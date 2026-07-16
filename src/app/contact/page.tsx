@@ -117,7 +117,7 @@ export default function ContactPage() {
 
   const faqs = [
     {
-      question: 'How do I become a member of CTS?',
+      question: 'How do I become a member of GCTS?',
       answer: 'You can become a member by filling out our membership form online or visiting our cultural center. We offer individual, family, student, and lifetime membership options.',
     },
     {
@@ -129,7 +129,7 @@ export default function ContactPage() {
       answer: 'Yes, we offer Tamil language classes for children and adults at different skill levels. Classes are held on weekends and weekday evenings.',
     },
     {
-      question: 'How can I volunteer with CTS?',
+      question: 'How can I volunteer with GCTS?',
       answer: 'We welcome volunteers for various programs and events. You can fill out our volunteer application form or contact our volunteer coordinator for more information.',
     },
     {
@@ -365,7 +365,7 @@ export default function ContactPage() {
                 href="/about"
                 sx={{ borderRadius: 2 }}
               >
-                Learn More About CTS
+                Learn More About GCTS
               </Button>
             </Box>
           </Container>

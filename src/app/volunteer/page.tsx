@@ -187,7 +187,7 @@ export default function VolunteerPage() {
         {/* Why Volunteer */}
         <Box sx={{ py: { xs: 6, md: 8 } }}>
           <SectionTitle
-            title="Why Volunteer with CTS?"
+            title="Why Volunteer with GCTS?"
             subtitle="More Than Just Giving Time"
             description="Discover the rewards of volunteering and how you can make a meaningful impact in our community"
             align="center"
@@ -366,7 +366,7 @@ export default function VolunteerPage() {
                     <Grid size={{ xs: 12 }}>
                       <TextField
                         fullWidth
-                        label="Why do you want to volunteer with CTS?"
+                        label="Why do you want to volunteer with GCTS?"
                         multiline
                         rows={3}
                         value={formData.motivation}
@@ -415,7 +415,7 @@ export default function VolunteerPage() {
             <SectionTitle
               title="What Our Volunteers Say"
               subtitle="Stories from Our Community"
-              description="Hear from volunteers who have made a difference through CTS"
+              description="Hear from volunteers who have made a difference through GCTS"
               align="center"
               showDivider={true}
             />

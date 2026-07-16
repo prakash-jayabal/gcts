@@ -173,7 +173,7 @@ export default function MembershipPage() {
       />
 
       <Container maxWidth="lg">
-        {/* Why Join CTS */}
+        {/* Why Join GCTS */}
         <Box sx={{ py: { xs: 6, md: 8 } }}>
           <SectionTitle
             title="Why Join Cincinnati Tamil Sangam?"
@@ -442,7 +442,7 @@ export default function MembershipPage() {
             <SectionTitle
               title="What Our Members Say"
               subtitle="Real Stories from Real Members"
-              description="Hear from families who have found connection and community through CTS"
+              description="Hear from families who have found connection and community through GCTS"
               align="center"
               showDivider={true}
             />

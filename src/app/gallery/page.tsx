@@ -306,7 +306,7 @@ export default function GalleryPage() {
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mt: 1 }}>
                       <LocationOn sx={{ fontSize: 16, color: 'action.active' }} />
                       <Typography variant="caption" color="text.secondary">
-                        CTS Cultural Center
+                        GCTS Cultural Center
                       </Typography>
                     </Box>
                   </CardContent>
@@ -374,7 +374,7 @@ export default function GalleryPage() {
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mt: 1 }}>
                       <LocationOn sx={{ fontSize: 16, color: 'action.active' }} />
                       <Typography variant="caption" color="text.secondary">
-                        CTS Cultural Center
+                        GCTS Cultural Center
                       </Typography>
                     </Box>
                   </CardContent>

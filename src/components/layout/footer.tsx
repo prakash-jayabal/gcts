@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
   };
 
   const footerLinks = {
-    'About CTS': [
+    'About GCTS': [
       { label: 'Our Mission', href: '/about/mission' },
       { label: 'History', href: '/about/history' },
       { label: 'Board Members', href: '/about/board' },

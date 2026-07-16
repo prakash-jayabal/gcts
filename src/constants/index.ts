@@ -3,7 +3,7 @@ export const APP_DESCRIPTION = 'Celebrating Tamil culture and heritage in Cincin
 
 export const NAVIGATION_ITEMS = [
   { label: 'Home', href: '/' },
-  { label: 'About CTS', href: '/about' },
+  { label: 'About GCTS', href: '/about' },
   { label: 'Events', href: '/events' },
   { label: 'Membership', href: '/membership' },
   { label: 'Youth Programs', href: '/youth-programs' },
